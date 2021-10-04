@@ -18,10 +18,10 @@
             <a class="nav-link" href="/silabos">Silabos</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-success" href="/" > Login </a>
-            <!-- <button class="btn btn-danger">
+            <!-- <a class="btn btn-success" href="/" > Login </a> -->
+            <button class="btn btn-danger">
               Logout
-            </button> -->
+            </button>
           </li>
         </ul>
       </div>

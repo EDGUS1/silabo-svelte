@@ -1,11 +1,13 @@
 <script>
+  import CardSilabo from './CardSilabo.svelte';
+
   let isLista = false;
   const cambiarLista = () => {
-    isLista = true
+    isLista = true;
   };
 
   const cambiarGrid = () => {
-    isLista = false
+    isLista = false;
   };
 </script>
 
@@ -59,7 +61,8 @@
             </button>
             <button
               type="button"
-              class="btn {isLista ? 'btn-outline-secondary' : 'btn-secondary'}" on:click={cambiarGrid}
+              class="btn {isLista ? 'btn-outline-secondary' : 'btn-secondary'}"
+              on:click={cambiarGrid}
               >G
               <!-- <fa-icon [icon]="faGrid"></fa-icon> -->
             </button>
@@ -72,14 +75,16 @@
     </div>
   </div>
   <div class="row my-3">
-    <div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <!-- <app-card-silabo
-            [silabo]="silabo"
-            (actualizar)="listSilabos(1)"
-          ></app-card-silabo> -->
-      </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <CardSilabo />
     </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <CardSilabo />
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <CardSilabo />
+    </div>
+
     <!-- <div #silaboslist>
         <div
           class="col-12"
@@ -92,15 +97,15 @@
           <app-card-silabos-list [silabo]="silabo"></app-card-silabos-list>
         </div>
       </div> -->
-    <div class="d-flex justify-content-center my-4">
-      <!-- <ngb-pagination
+    <!-- <div class="d-flex justify-content-center my-4">
+      <ngb-pagination
           [(page)]="page"
           [pageSize]="pageSize"
           [collectionSize]="
             (silabos | search: 'asig_nombre':filterSearch)?.length
           "
-        ></ngb-pagination> -->
-    </div>
+        ></ngb-pagination>
+    </div> -->
   </div>
   <!-- <ng-template #nosilabos>
       <div class="row my-5">
