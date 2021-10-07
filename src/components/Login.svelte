@@ -3,13 +3,7 @@
 
 <div class="card form-signin text-center mt-4">
   <form>
-    <img
-      class="my-4"
-      src="/user.png"
-      alt=""
-      width="100"
-      height="100"
-    />
+    <img class="my-4" src="/user.png" alt="" width="100" height="100" />
     <h1 class="h3 mb-3 fw-normal my-3">Inicio de sesión</h1>
 
     <div class="form-floating my-3">
@@ -43,7 +37,6 @@
 </div>
 
 <style>
-
   .form-signin {
     width: 100%;
     max-width: 330px;
